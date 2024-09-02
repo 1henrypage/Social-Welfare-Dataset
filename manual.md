@@ -12,9 +12,9 @@ Using the risk scores as ground truth for model training is a two step process. 
    * library(gbm)
    * library(dplyr)
 
-   * data <- read.csv("data/01_raw/[INPUT_FILENAME].csv")
+   * data <- read.csv("data/01_raw/synth_data_train.csv")
    * final_model <- readRDS("data/01_raw/20220929_finale_model.rds")$model[[1]]
 
    * risk_scores <- predict.train(final_model, newdata = data, type = 'prob')
    * risk_scores <- cbind(data, risk_scores)
-   * write.csv(risk_scores, "data/01_raw/[OUTPUT_FILENAME].csv", quote = FALSE)
+   * write.csv(risk_scores, "data/01_raw/synth_data_train_labeled.csv", quote = FALSE, row.names = FALSE)
