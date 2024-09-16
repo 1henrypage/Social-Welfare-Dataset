@@ -7,3 +7,4 @@
 */.DS_Store
 data/03_experiment_input
 data/04_experiment_output
+data/01_raw/*.csv
