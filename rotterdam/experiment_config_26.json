@@ -1,0 +1,11 @@
+{
+    "decision_path": "data/decision_data.csv",
+    "graph_path": "data/process_graph.txt",
+    "test_path": "data/rotterdam/investigation_test_26.csv",
+    "train_path": "data/rotterdam/investigation_train_26.csv",
+    "model_path": "data/rotterdam/investigation_model_26.bson",
+    "config_path": "data/rotterdam/investigation_config_26.json",
+    "total_agents": 1000,
+    "model": "NeuroTreeModel",
+    "generator": "wachter"
+}
